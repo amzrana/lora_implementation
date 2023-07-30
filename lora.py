@@ -1,11 +1,6 @@
 import torch
 import torch.nn as nn
 
-class LoRALayer(object):
-    def __init__(self, lora_rank: int, lora_alpha: int):
-        self.lora_rank = lora_rank
-        self.lora_alpha = lora_alpha
-
 
 class LoraModule(nn.Module):
     def __init__(
